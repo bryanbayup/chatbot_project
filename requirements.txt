@@ -1,0 +1,9 @@
+jsonschema==4.19.0
+pandas==2.2.2
+numpy==1.26.4
+tensorflow==2.15.0
+gensim==4.3.3
+scikit-learn==1.5.2
+seqeval
+imbalanced-learn==0.12.4
+keras-tuner

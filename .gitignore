@@ -1,0 +1,5 @@
+# Eksklusikan hanya file sementara atau cache
+__pycache__/
+*.pyc
+*.log
+
