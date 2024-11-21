@@ -1,9 +1,20 @@
+# Core Libraries
 jsonschema==4.19.0
 pandas==2.2.2
 numpy==1.26.4
+
+# Machine Learning and NLP
 tensorflow==2.15.0
 gensim==4.3.3
 scikit-learn==1.5.2
-seqeval
 imbalanced-learn==0.12.4
+seqeval
 keras-tuner
+
+# Web Framework and Server
+Flask
+gunicorn==20.1.0
+
+# Additional Tools
+pickle-mixin==1.0.2
+
