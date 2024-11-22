@@ -6774,7 +6774,7 @@
             }
         ],
         "responses": "Kucing Anda terkena Feline Viral Rhinotracheitis (FVR). Obat antivirus, antibiotik untuk infeksi sekunder, dan menjaga kebersihan mata serta hidung."
-    }
+    },
     {
         "utterances": "Saya menemukan anjing terluka di jalan. Apa yang harus saya lakukan?",
         "intent": "found_dog_street",
