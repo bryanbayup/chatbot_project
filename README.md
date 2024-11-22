@@ -1,3 +1,4 @@
+```bash
 chatbot_project/
 ├── README.md
 ├── app
@@ -18,3 +19,4 @@ chatbot_project/
 ├── run.py
 ├── requirements.txt
 ├── config.py
+```
