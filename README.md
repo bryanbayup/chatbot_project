@@ -19,4 +19,6 @@ chatbot_project/
 ├── run.py
 ├── requirements.txt
 ├── config.py
+├── docker-compose.yml
+├── Dockerfile
 ```
