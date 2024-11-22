@@ -7554,5 +7554,576 @@
             { "entity": "location", "value": "festival luar ruangan", "start": 29, "end": 52 }
         ],
         "responses": "Gunakan tali kekang untuk mengontrol anjing Anda, bawa air minum, dan pastikan ada tempat istirahat di area yang sepi."
+    },
+    {
+        "utterances": "Saya menemukan anjing terlantar di depan sekolah, dia terlihat bingung. Apa yang harus saya lakukan?",
+        "intent": "found_abandoned_dog_street",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 16, "end": 22 },
+            { "entity": "location", "value": "depan sekolah", "start": 36, "end": 50 }
+        ],
+        "responses": "Cobalah untuk memberikan makanan dan air, kemudian hubungi penampungan hewan terdekat untuk bantuan lebih lanjut."
+    },
+    {
+        "utterances": "Ada anjing terlantar di dekat pasar yang terus berjalan tanpa arah. Apa saya bisa membantu?",
+        "intent": "found_abandoned_dog_street",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 4, "end": 10 },
+            { "entity": "location", "value": "dekat pasar", "start": 23, "end": 35 }
+        ],
+        "responses": "Jika memungkinkan, coba foto anjing tersebut dan bagikan di media sosial untuk menemukan pemiliknya atau hubungi shelter."
+    },
+    {
+        "utterances": "Saya menemukan anak anjing terlantar di taman, dia tampak lemah. Apa yang harus saya lakukan?",
+        "intent": "found_abandoned_puppy",
+        "entities": [
+            { "entity": "animal", "value": "anak anjing", "start": 16, "end": 27 },
+            { "entity": "location", "value": "taman", "start": 38, "end": 43 }
+        ],
+        "responses": "Pastikan anak anjing tersebut aman dari bahaya, lalu beri makanan dan air. Hubungi shelter hewan untuk langkah berikutnya."
+    },
+    {
+        "utterances": "Di pinggir jalan saya menemukan anak anjing kecil yang sendirian. Apa yang bisa saya lakukan untuk membantunya?",
+        "intent": "found_abandoned_puppy",
+        "entities": [
+            { "entity": "animal", "value": "anak anjing", "start": 23, "end": 34 },
+            { "entity": "location", "value": "pinggir jalan", "start": 3, "end": 17 }
+        ],
+        "responses": "Bawa anak anjing tersebut ke tempat aman, beri makanan, dan segera hubungi penampungan hewan terdekat."
+    },
+    {
+        "utterances": "Ada anjing yang terus menggonggong di depan rumah tetangga, suaranya sangat keras. Apa yang bisa saya lakukan?",
+        "intent": "found_barking_dog",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 4, "end": 10 },
+            { "entity": "location", "value": "depan rumah tetangga", "start": 34, "end": 54 }
+        ],
+        "responses": "Coba periksa apakah anjing tersebut lapar atau ada sesuatu yang membuatnya takut. Jika masalah berlanjut, hubungi pemiliknya atau pihak berwenang."
+    },
+    {
+        "utterances": "Di depan pasar ada seekor anjing yang menggonggong terus-menerus. Apa yang harus dilakukan?",
+        "intent": "found_barking_dog",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 18, "end": 24 },
+            { "entity": "location", "value": "depan pasar", "start": 3, "end": 15 }
+        ],
+        "responses": "Perhatikan apakah ada sesuatu yang membuat anjing merasa terganggu. Jika tidak ada, hubungi pemilik atau shelter untuk bantuan."
+    },
+    {
+        "utterances": "Kucing saya matanya terlihat merah dan sering berkedip. Apakah itu penyakit serius?",
+        "intent": "found_cat_eye_problem",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 0, "end": 6 },
+            { "entity": "symptom", "value": "mata merah dan sering berkedip", "start": 18, "end": 50 }
+        ],
+        "responses": "Mungkin itu tanda iritasi atau infeksi. Segera bawa kucing ke dokter hewan untuk pemeriksaan lebih lanjut."
+    },
+    {
+        "utterances": "Kucing saya matanya terlihat bengkak dan berair. Apakah saya harus segera membawanya ke dokter?",
+        "intent": "found_cat_eye_problem",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 0, "end": 6 },
+            { "entity": "symptom", "value": "mata bengkak dan berair", "start": 18, "end": 43 }
+        ],
+        "responses": "Ya, segera konsultasikan ke dokter hewan. Kondisi ini bisa menjadi tanda alergi, infeksi, atau masalah mata lainnya."
+    },
+    {
+        "utterances": "Saya menemukan seekor kucing liar di taman yang tampaknya sedang mencari makanan. Apa yang harus saya lakukan?",
+        "intent": "found_cat_street",
+        "entities": [
+            { "entity": "animal", "value": "kucing liar", "start": 17, "end": 28 },
+            { "entity": "location", "value": "taman", "start": 32, "end": 37 }
+        ],
+        "responses": "Cobalah beri makan dan air di tempat yang aman. Jika memungkinkan, hubungi penampungan hewan untuk penanganan lebih lanjut."
+    },
+    {
+        "utterances": "Di depan rumah saya melihat kucing liar yang tampaknya kedinginan. Bagaimana saya bisa membantunya?",
+        "intent": "found_cat_street",
+        "entities": [
+            { "entity": "animal", "value": "kucing liar", "start": 19, "end": 30 },
+            { "entity": "location", "value": "depan rumah", "start": 3, "end": 15 }
+        ],
+        "responses": "Pastikan kucing tersebut hangat dan terlindungi. Jika memungkinkan, hubungi shelter atau bawa ke klinik hewan."
+    },
+    {
+        "utterances": "Saya menemukan kucing dengan ekor terluka di taman bermain. Apa yang harus saya lakukan?",
+        "intent": "found_cat_tail_injury",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 16, "end": 22 },
+            { "entity": "location", "value": "taman bermain", "start": 44, "end": 57 },
+            { "entity": "symptom", "value": "ekor terluka", "start": 28, "end": 41 }
+        ],
+        "responses": "Cobalah untuk membersihkan luka dengan air bersih. Jika parah, segera bawa kucing ke dokter hewan."
+    },
+    {
+        "utterances": "Ada kucing di pinggir jalan dengan ekor yang tampak terluka dan berdarah. Bagaimana saya bisa membantunya?",
+        "intent": "found_cat_tail_injury",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 4, "end": 10 },
+            { "entity": "location", "value": "pinggir jalan", "start": 14, "end": 28 },
+            { "entity": "symptom", "value": "ekor terluka dan berdarah", "start": 40, "end": 67 }
+        ],
+        "responses": "Segera bawa kucing tersebut ke dokter hewan untuk perawatan lebih lanjut."
+    },
+    {
+        "utterances": "Saya melihat kucing terjebak di atas pohon. Dia terlihat sangat ketakutan. Apa yang harus saya lakukan?",
+        "intent": "found_cat_tree",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 12, "end": 18 },
+            { "entity": "location", "value": "di atas pohon", "start": 29, "end": 43 }
+        ],
+        "responses": "Cobalah menarik perhatian kucing dengan makanan. Jika tidak bisa turun, hubungi layanan penyelamatan hewan."
+    },
+    {
+        "utterances": "Ada seekor kucing di pohon belakang rumah saya yang terlihat kesulitan turun. Bagaimana cara membantu?",
+        "intent": "found_cat_tree",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 10, "end": 16 },
+            { "entity": "location", "value": "pohon belakang rumah", "start": 20, "end": 41 }
+        ],
+        "responses": "Jangan paksa kucing untuk turun. Anda bisa memancingnya dengan makanan atau hubungi pihak berwenang."
+    },
+    {
+        "utterances": "Saya menemukan anjing yang kedinginan di jalan saat hujan deras. Apa yang harus saya lakukan?",
+        "intent": "found_cold_dog",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 16, "end": 22 },
+            { "entity": "condition", "value": "kedinginan", "start": 27, "end": 37 },
+            { "entity": "location", "value": "di jalan", "start": 38, "end": 46 }
+        ],
+        "responses": "Bawa anjing tersebut ke tempat yang hangat dan kering. Beri handuk untuk menghangatkannya."
+    },
+    {
+        "utterances": "Di taman saya melihat anjing kecil yang menggigil karena kedinginan. Apa saya harus membawanya ke shelter?",
+        "intent": "found_cold_dog",
+        "entities": [
+            { "entity": "animal", "value": "anjing kecil", "start": 18, "end": 30 },
+            { "entity": "condition", "value": "menggigil karena kedinginan", "start": 36, "end": 63 },
+            { "entity": "location", "value": "di taman", "start": 3, "end": 11 }
+        ],
+        "responses": "Jika memungkinkan, bawa anjing ke shelter atau beri selimut hangat sementara."
+    },
+    {
+        "utterances": "Ada kucing di sekitar pasar yang terlihat bingung dan seperti kehilangan arah. Apa yang harus saya lakukan?",
+        "intent": "found_confused_cat",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 4, "end": 10 },
+            { "entity": "condition", "value": "bingung", "start": 34, "end": 40 },
+            { "entity": "location", "value": "sekitar pasar", "start": 14, "end": 28 }
+        ],
+        "responses": "Coba amankan kucing di tempat yang tenang. Jika tidak ada pemilik yang mencarinya, bawa ke shelter."
+    },
+    {
+        "utterances": "Saya melihat kucing di gang kecil yang terus mondar-mandir dengan ekspresi kebingungan. Apa yang harus saya lakukan?",
+        "intent": "found_confused_cat",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 12, "end": 18 },
+            { "entity": "location", "value": "di gang kecil", "start": 22, "end": 36 },
+            { "entity": "condition", "value": "terus mondar-mandir dengan ekspresi kebingungan", "start": 41, "end": 88 }
+        ],
+        "responses": "Dekati kucing tersebut secara perlahan. Jika memungkinkan, cek apakah kucing memiliki tanda pengenal."
+    },
+    {
+        "utterances": "Ada seekor anjing di jalan besar yang terlihat linglung dan tidak tahu ke mana harus pergi. Apa saya bisa membantunya?",
+        "intent": "found_confused_dog",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 10, "end": 16 },
+            { "entity": "location", "value": "di jalan besar", "start": 20, "end": 34 },
+            { "entity": "condition", "value": "linglung", "start": 45, "end": 52 }
+        ],
+        "responses": "Amankan anjing di tempat yang tenang. Cobalah mencari pemiliknya atau bawa ke shelter untuk bantuan."
+    },
+    {
+        "utterances": "Saya menemukan anjing di depan toko yang hanya diam sambil melihat ke arah jauh. Apa yang bisa saya lakukan?",
+        "intent": "found_confused_dog",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 16, "end": 22 },
+            { "entity": "location", "value": "di depan toko", "start": 26, "end": 40 },
+            { "entity": "condition", "value": "hanya diam sambil melihat ke arah jauh", "start": 45, "end": 82 }
+        ],
+        "responses": "Pastikan anjing tersebut tidak dalam bahaya. Jika tampaknya hilang, bawa ke penampungan hewan terdekat."
+    },
+    {
+        "utterances": "Saya melihat seekor anjing di tengah jalan tol yang hampir tertabrak kendaraan. Apa yang harus saya lakukan?",
+        "intent": "found_dog_highway",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 13, "end": 19 },
+            { "entity": "location", "value": "jalan tol", "start": 30, "end": 39 }
+        ],
+        "responses": "Jangan coba menangkap anjing di jalan tol. Hubungi layanan darurat atau polisi lalu lintas untuk penanganan lebih aman."
+    },
+    {
+        "utterances": "Di tol saya melihat seekor anjing yang tampak kebingungan dan berlari-lari. Apa yang harus saya lakukan?",
+        "intent": "found_dog_highway",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 21, "end": 27 },
+            { "entity": "location", "value": "tol", "start": 3, "end": 6 }
+        ],
+        "responses": "Segera laporkan kepada petugas tol atau layanan darurat untuk menangani situasi dengan aman."
+    },
+    {
+        "utterances": "Saya menemukan seekor anjing di jalan depan rumah saya yang tampak bingung. Bagaimana cara membantunya?",
+        "intent": "found_dog_street",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 20, "end": 26 },
+            { "entity": "location", "value": "jalan depan rumah", "start": 30, "end": 49 }
+        ],
+        "responses": "Dekati anjing dengan perlahan, pastikan tidak mengancamnya. Jika memungkinkan, beri air dan hubungi shelter."
+    },
+    {
+        "utterances": "Di jalan saya melihat anjing yang seperti kehilangan arah. Apa saya harus membawanya ke shelter?",
+        "intent": "found_dog_street",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 15, "end": 21 },
+            { "entity": "location", "value": "jalan", "start": 3, "end": 8 }
+        ],
+        "responses": "Jika aman, amankan anjing tersebut dari jalan dan hubungi shelter hewan untuk langkah berikutnya."
+    },
+    {
+        "utterances": "Di depan toko saya melihat seekor kucing liar yang terlihat kelaparan. Apa yang harus saya lakukan?",
+        "intent": "found_hungry_cat_street",
+        "entities": [
+            { "entity": "animal", "value": "kucing liar", "start": 20, "end": 31 },
+            { "entity": "location", "value": "depan toko", "start": 3, "end": 14 },
+            { "entity": "condition", "value": "kelaparan", "start": 46, "end": 55 }
+        ],
+        "responses": "Beri makanan dan air kepada kucing tersebut di tempat yang aman. Jika memungkinkan, hubungi penampungan hewan."
+    },
+    {
+        "utterances": "Saya menemukan kucing liar yang sangat kurus di jalan belakang rumah. Apa yang harus saya lakukan?",
+        "intent": "found_hungry_cat_street",
+        "entities": [
+            { "entity": "animal", "value": "kucing liar", "start": 13, "end": 24 },
+            { "entity": "location", "value": "jalan belakang rumah", "start": 44, "end": 64 },
+            { "entity": "condition", "value": "sangat kurus", "start": 30, "end": 42 }
+        ],
+        "responses": "Berikan makanan kepada kucing di tempat yang aman. Pastikan dia memiliki akses ke air bersih juga."
+    },
+    {
+        "utterances": "Ada seekor anjing yang kelaparan di taman dan tampak sangat lemah. Bagaimana saya bisa membantunya?",
+        "intent": "found_hungry_dog",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 13, "end": 19 },
+            { "entity": "condition", "value": "kelaparan", "start": 25, "end": 34 },
+            { "entity": "location", "value": "taman", "start": 38, "end": 43 }
+        ],
+        "responses": "Beri anjing tersebut makanan dan air. Jika masih lemah, bawa ke dokter hewan atau shelter untuk perawatan."
+    },
+    {
+        "utterances": "Saya menemukan anjing yang terlihat kurus dan kelaparan di jalan depan kantor. Apa yang harus saya lakukan?",
+        "intent": "found_hungry_dog",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 16, "end": 22 },
+            { "entity": "condition", "value": "kurus dan kelaparan", "start": 34, "end": 53 },
+            { "entity": "location", "value": "jalan depan kantor", "start": 57, "end": 75 }
+        ],
+        "responses": "Berikan makanan dan air, kemudian laporkan ke shelter terdekat agar mereka dapat memberikan perawatan lebih lanjut."
+    },
+    {
+        "utterances": "Di pinggir jalan saya melihat seekor kucing yang terluka parah di bagian kaki. Bagaimana cara menolongnya?",
+        "intent": "found_injured_cat_street",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 22, "end": 28 },
+            { "entity": "location", "value": "pinggir jalan", "start": 3, "end": 17 },
+            { "entity": "symptom", "value": "terluka parah di bagian kaki", "start": 34, "end": 62 }
+        ],
+        "responses": "Amankan kucing tersebut di tempat yang tenang, dan segera bawa ke dokter hewan untuk perawatan."
+    },
+    {
+        "utterances": "Saya melihat seekor kucing liar di taman yang terluka di bagian punggung. Apa yang harus saya lakukan?",
+        "intent": "found_injured_cat_street",
+        "entities": [
+            { "entity": "animal", "value": "kucing liar", "start": 13, "end": 24 },
+            { "entity": "location", "value": "taman", "start": 28, "end": 33 },
+            { "entity": "symptom", "value": "terluka di bagian punggung", "start": 39, "end": 66 }
+        ],
+        "responses": "Dekati kucing secara perlahan, amankan di tempat yang aman, dan bawa ke dokter hewan untuk penanganan segera."
+    },
+    {
+        "utterances": "Saya menemukan seekor anjing terluka di pinggir jalan yang terlihat kesakitan. Apa yang harus saya lakukan?",
+        "intent": "found_injured_dog_street",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 16, "end": 22 },
+            { "entity": "symptom", "value": "terluka", "start": 23, "end": 31 },
+            { "entity": "location", "value": "pinggir jalan", "start": 35, "end": 49 }
+        ],
+        "responses": "Cobalah untuk menenangkan anjing tersebut dan pastikan dia tidak bergerak terlalu banyak. Segera bawa ke dokter hewan."
+    },
+    {
+        "utterances": "Di jalan besar saya melihat seekor anjing yang terluka di bagian kaki. Bagaimana saya bisa menolongnya?",
+        "intent": "found_injured_dog_street",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 20, "end": 26 },
+            { "entity": "symptom", "value": "terluka di bagian kaki", "start": 33, "end": 56 },
+            { "entity": "location", "value": "jalan besar", "start": 3, "end": 15 }
+        ],
+        "responses": "Segera bawa anjing tersebut ke klinik hewan terdekat atau hubungi layanan darurat hewan."
+    },
+    {
+        "utterances": "Saya menemukan anak kucing di jalan dekat taman. Dia terlihat kebingungan. Apa yang harus saya lakukan?",
+        "intent": "found_kitten_street",
+        "entities": [
+            { "entity": "animal", "value": "anak kucing", "start": 16, "end": 27 },
+            { "entity": "location", "value": "jalan dekat taman", "start": 31, "end": 49 }
+        ],
+        "responses": "Amankan anak kucing tersebut di tempat yang aman. Beri makanan dan hubungi shelter jika tidak ada pemilik yang mencarinya."
+    },
+    {
+        "utterances": "Saya melihat anak kucing kecil di jalan depan toko yang tampaknya sedang mencari makan. Bagaimana cara membantunya?",
+        "intent": "found_kitten_street",
+        "entities": [
+            { "entity": "animal", "value": "anak kucing", "start": 12, "end": 23 },
+            { "entity": "location", "value": "jalan depan toko", "start": 27, "end": 45 }
+        ],
+        "responses": "Beri anak kucing makanan dan air, lalu amankan di tempat yang aman hingga pemiliknya ditemukan atau bawa ke shelter."
+    },
+    {
+        "utterances": "Ada seekor anak kucing yang bersembunyi di bawah mobil saya. Apa yang harus saya lakukan?",
+        "intent": "found_kitten_under_car",
+        "entities": [
+            { "entity": "animal", "value": "anak kucing", "start": 10, "end": 21 },
+            { "entity": "location", "value": "di bawah mobil", "start": 39, "end": 54 }
+        ],
+        "responses": "Cobalah untuk memancing anak kucing tersebut keluar menggunakan makanan. Jangan nyalakan mesin mobil sebelum dia aman."
+    },
+    {
+        "utterances": "Saya mendengar suara anak kucing di bawah mobil tetangga. Bagaimana cara membantu?",
+        "intent": "found_kitten_under_car",
+        "entities": [
+            { "entity": "animal", "value": "anak kucing", "start": 19, "end": 30 },
+            { "entity": "location", "value": "di bawah mobil tetangga", "start": 31, "end": 55 }
+        ],
+        "responses": "Dekati dengan perlahan dan coba tarik perhatian anak kucing dengan makanan. Pastikan dia aman sebelum menyalakan kendaraan."
+    },
+    {
+        "utterances": "Saya menemukan seekor kucing yang tampaknya tersesat di taman bermain. Bagaimana saya bisa membantunya?",
+        "intent": "found_lost_cat",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 16, "end": 22 },
+            { "entity": "location", "value": "taman bermain", "start": 47, "end": 60 },
+            { "entity": "condition", "value": "tersesat", "start": 31, "end": 39 }
+        ],
+        "responses": "Amankan kucing tersebut di tempat yang tenang. Jika ada, periksa tanda pengenal atau hubungi shelter terdekat."
+    },
+    {
+        "utterances": "Saya melihat seekor kucing di sekitar komplek yang tampak kebingungan dan tersesat. Apa yang harus saya lakukan?",
+        "intent": "found_lost_cat",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 17, "end": 23 },
+            { "entity": "location", "value": "di sekitar komplek", "start": 27, "end": 45 },
+            { "entity": "condition", "value": "tersesat", "start": 71, "end": 79 }
+        ],
+        "responses": "Beri kucing makanan dan air, dan coba cek apakah ada pemilik di sekitar yang mencarinya. Jika tidak ada, hubungi shelter."
+    },
+    {
+        "utterances": "Saya menemukan seekor anjing yang sangat kurus dan tampak tidak terawat di pinggir jalan. Apa yang harus saya lakukan?",
+        "intent": "found_malnourished_dog",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 16, "end": 22 },
+            { "entity": "condition", "value": "sangat kurus dan tampak tidak terawat", "start": 31, "end": 66 },
+            { "entity": "location", "value": "pinggir jalan", "start": 70, "end": 84 }
+        ],
+        "responses": "Berikan makanan dan air kepada anjing tersebut. Jika memungkinkan, bawa ke shelter atau dokter hewan untuk perawatan."
+    },
+    {
+        "utterances": "Saya melihat seekor anjing yang tampak kurus dan kelaparan di taman. Bagaimana saya bisa membantu?",
+        "intent": "found_malnourished_dog",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 17, "end": 23 },
+            { "entity": "condition", "value": "kurus dan kelaparan", "start": 33, "end": 54 },
+            { "entity": "location", "value": "di taman", "start": 58, "end": 66 }
+        ],
+        "responses": "Beri makanan dan air kepada anjing tersebut. Jika masih terlihat lemah, segera bawa ke shelter."
+    },
+    {
+        "utterances": "Saya mendengar suara anak kucing mengeong terus di depan rumah. Apa yang harus saya lakukan?",
+        "intent": "found_meowing_kitten",
+        "entities": [
+            { "entity": "animal", "value": "anak kucing", "start": 19, "end": 30 },
+            { "entity": "sound", "value": "mengeong terus", "start": 31, "end": 45 },
+            { "entity": "location", "value": "depan rumah", "start": 49, "end": 61 }
+        ],
+        "responses": "Dekati anak kucing tersebut dengan hati-hati. Berikan makanan dan air jika diperlukan."
+    },
+    {
+        "utterances": "Ada seekor anak kucing mengeong kencang di bawah mobil tetangga. Apa yang harus saya lakukan?",
+        "intent": "found_meowing_kitten",
+        "entities": [
+            { "entity": "animal", "value": "anak kucing", "start": 10, "end": 21 },
+            { "entity": "sound", "value": "mengeong kencang", "start": 22, "end": 38 },
+            { "entity": "location", "value": "di bawah mobil tetangga", "start": 39, "end": 65 }
+        ],
+        "responses": "Coba pancing anak kucing keluar dengan makanan. Pastikan dia aman dari bahaya."
+    },
+    {
+        "utterances": "Saya menemukan anak anjing di jalan depan pasar. Dia terlihat bingung. Apa yang harus saya lakukan?",
+        "intent": "found_puppy_street",
+        "entities": [
+            { "entity": "animal", "value": "anak anjing", "start": 16, "end": 27 },
+            { "entity": "location", "value": "jalan depan pasar", "start": 31, "end": 49 }
+        ],
+        "responses": "Amankan anak anjing tersebut, beri makanan dan air, lalu hubungi shelter hewan untuk bantuan."
+    },
+    {
+        "utterances": "Ada seekor anak anjing yang berkeliaran di taman sendirian. Bagaimana cara membantunya?",
+        "intent": "found_puppy_street",
+        "entities": [
+            { "entity": "animal", "value": "anak anjing", "start": 10, "end": 21 },
+            { "entity": "location", "value": "taman", "start": 43, "end": 48 }
+        ],
+        "responses": "Coba beri anak anjing makanan dan air. Jika tidak ada pemilik yang mencarinya, hubungi shelter."
+    },
+    {
+        "utterances": "Saya menemukan seekor kucing yang terluka parah di bagian tubuhnya di pinggir jalan. Bagaimana saya bisa membantunya?",
+        "intent": "found_severely_injured_cat",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 16, "end": 22 },
+            { "entity": "symptom", "value": "terluka parah di bagian tubuhnya", "start": 28, "end": 60 },
+            { "entity": "location", "value": "pinggir jalan", "start": 64, "end": 78 }
+        ],
+        "responses": "Segera bawa kucing tersebut ke dokter hewan untuk perawatan. Jangan biarkan kucing bergerak terlalu banyak."
+    },
+    {
+        "utterances": "Ada seekor kucing yang terluka parah di taman. Apa yang harus saya lakukan untuk menolongnya?",
+        "intent": "found_severely_injured_cat",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 10, "end": 16 },
+            { "entity": "symptom", "value": "terluka parah", "start": 22, "end": 35 },
+            { "entity": "location", "value": "taman", "start": 39, "end": 44 }
+        ],
+        "responses": "Dekati kucing dengan hati-hati dan bawa ke dokter hewan segera. Pastikan dia tidak semakin cedera."
+    },
+    {
+        "utterances": "Saya menemukan seekor kucing di jalan dekat rumah yang terlihat sakit. Apa yang harus saya lakukan?",
+        "intent": "found_sick_cat_street",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 16, "end": 22 },
+            { "entity": "location", "value": "jalan dekat rumah", "start": 26, "end": 44 },
+            { "entity": "condition", "value": "sakit", "start": 55, "end": 60 }
+        ],
+        "responses": "Bawa kucing tersebut ke dokter hewan untuk pemeriksaan lebih lanjut. Pastikan dia tetap tenang selama perjalanan."
+    },
+    {
+        "utterances": "Ada kucing di taman bermain yang tampak sakit. Apa saya perlu membawanya ke dokter hewan?",
+        "intent": "found_sick_cat_street",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 4, "end": 10 },
+            { "entity": "location", "value": "taman bermain", "start": 14, "end": 28 },
+            { "entity": "condition", "value": "sakit", "start": 40, "end": 45 }
+        ],
+        "responses": "Ya, segera bawa kucing tersebut ke dokter hewan. Pastikan dia aman selama perjalanan."
+    },
+    {
+        "utterances": "Saya melihat seekor kucing tidur di bawah pohon di taman. Apakah saya perlu melakukan sesuatu?",
+        "intent": "found_sleeping_cat",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 16, "end": 22 },
+            { "entity": "location", "value": "di bawah pohon di taman", "start": 29, "end": 52 }
+        ],
+        "responses": "Jika kucing terlihat sehat dan tidak dalam bahaya, biarkan dia beristirahat. Jika ada yang mencurigakan, periksa lebih lanjut."
+    },
+    {
+        "utterances": "Di depan rumah saya ada kucing yang sedang tidur dengan nyenyak. Apakah itu normal?",
+        "intent": "found_sleeping_cat",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 20, "end": 26 },
+            { "entity": "location", "value": "di depan rumah", "start": 3, "end": 19 },
+            { "entity": "action", "value": "sedang tidur dengan nyenyak", "start": 27, "end": 54 }
+        ],
+        "responses": "Jika kucing terlihat sehat dan nyaman, tidak perlu khawatir. Biarkan dia beristirahat dengan tenang."
+    },
+    {
+        "utterances": "Saya menemukan seekor anjing liar di taman bermain. Apa yang harus saya lakukan?",
+        "intent": "found_stray_dog_playground",
+        "entities": [
+            { "entity": "animal", "value": "anjing liar", "start": 16, "end": 27 },
+            { "entity": "location", "value": "taman bermain", "start": 31, "end": 44 }
+        ],
+        "responses": "Dekati anjing tersebut perlahan dan lihat apakah dia membutuhkan bantuan. Hubungi shelter hewan jika diperlukan."
+    },
+    {
+        "utterances": "Ada seekor anjing liar yang berlarian di taman bermain. Bagaimana cara membantu?",
+        "intent": "found_stray_dog_playground",
+        "entities": [
+            { "entity": "animal", "value": "anjing liar", "start": 10, "end": 21 },
+            { "entity": "location", "value": "taman bermain", "start": 39, "end": 52 }
+        ],
+        "responses": "Jika memungkinkan, amankan anjing tersebut di tempat aman. Berikan makanan dan hubungi shelter terdekat."
+    },
+    {
+        "utterances": "Saya melihat seekor anjing liar di jalan depan pasar. Apa yang harus saya lakukan?",
+        "intent": "found_stray_dog_street",
+        "entities": [
+            { "entity": "animal", "value": "anjing liar", "start": 16, "end": 27 },
+            { "entity": "location", "value": "jalan depan pasar", "start": 31, "end": 49 }
+        ],
+        "responses": "Amankan anjing tersebut dari jalan. Jika memungkinkan, beri makanan dan air, lalu hubungi shelter hewan."
+    },
+    {
+        "utterances": "Di pinggir jalan saya melihat seekor anjing liar yang tampak kebingungan. Bagaimana cara membantunya?",
+        "intent": "found_stray_dog_street",
+        "entities": [
+            { "entity": "animal", "value": "anjing liar", "start": 26, "end": 37 },
+            { "entity": "location", "value": "pinggir jalan", "start": 3, "end": 17 }
+        ],
+        "responses": "Dekati anjing dengan hati-hati. Beri makanan jika memungkinkan dan laporkan ke shelter hewan untuk bantuan."
+    },
+    {
+        "utterances": "Saya menemukan seekor anak anjing liar di taman belakang rumah. Apa yang harus saya lakukan?",
+        "intent": "found_stray_puppy",
+        "entities": [
+            { "entity": "animal", "value": "anak anjing liar", "start": 16, "end": 32 },
+            { "entity": "location", "value": "taman belakang rumah", "start": 36, "end": 56 }
+        ],
+        "responses": "Pastikan anak anjing tersebut aman. Berikan makanan dan air, lalu hubungi shelter terdekat."
+    },
+    {
+        "utterances": "Ada anak anjing liar di jalan kecil dekat toko. Dia terlihat ketakutan. Bagaimana cara membantunya?",
+        "intent": "found_stray_puppy",
+        "entities": [
+            { "entity": "animal", "value": "anak anjing liar", "start": 4, "end": 20 },
+            { "entity": "location", "value": "jalan kecil dekat toko", "start": 24, "end": 47 }
+        ],
+        "responses": "Dekati dengan perlahan dan beri makanan. Jika tidak ada pemilik, hubungi shelter untuk bantuan lebih lanjut."
+    },
+    {
+        "utterances": "Saya menemukan seekor anjing di depan toko yang terlihat sangat lemah. Apa yang harus saya lakukan?",
+        "intent": "found_weak_dog",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 16, "end": 22 },
+            { "entity": "location", "value": "depan toko", "start": 26, "end": 37 },
+            { "entity": "condition", "value": "sangat lemah", "start": 48, "end": 60 }
+        ],
+        "responses": "Bawa anjing ke tempat aman dan beri air. Jika kondisinya parah, segera bawa ke dokter hewan."
+    },
+    {
+        "utterances": "Ada seekor anjing yang terlihat lemah di taman. Apa yang bisa saya lakukan untuk membantunya?",
+        "intent": "found_weak_dog",
+        "entities": [
+            { "entity": "animal", "value": "anjing", "start": 10, "end": 16 },
+            { "entity": "location", "value": "taman", "start": 36, "end": 41 },
+            { "entity": "condition", "value": "lemah", "start": 24, "end": 29 }
+        ],
+        "responses": "Beri anjing air dan tempat istirahat yang aman. Jika tidak membaik, bawa ke dokter hewan untuk pemeriksaan."
+    },
+    {
+        "utterances": "Saya melihat seekor kucing basah kuyup di taman setelah hujan deras. Apa yang harus saya lakukan?",
+        "intent": "found_wet_cat_rain",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 16, "end": 22 },
+            { "entity": "condition", "value": "basah kuyup", "start": 23, "end": 34 },
+            { "entity": "location", "value": "taman", "start": 38, "end": 43 }
+        ],
+        "responses": "Bawa kucing ke tempat yang hangat dan kering. Pastikan dia tidak terkena hipotermia."
+    },
+    {
+        "utterances": "Ada seekor kucing basah karena hujan di depan rumah saya. Bagaimana cara menolongnya?",
+        "intent": "found_wet_cat_rain",
+        "entities": [
+            { "entity": "animal", "value": "kucing", "start": 10, "end": 16 },
+            { "entity": "condition", "value": "basah karena hujan", "start": 17, "end": 35 },
+            { "entity": "location", "value": "di depan rumah", "start": 36, "end": 51 }
+        ],
+        "responses": "Bawa kucing tersebut ke tempat yang kering dan hangat. Berikan selimut untuk membuatnya nyaman."
     }
 ]
